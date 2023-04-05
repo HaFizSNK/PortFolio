@@ -1,0 +1,361 @@
+*{
+    padding:0%;
+    margin: 0%;
+font-family: sans-serif'Poppins';
+box-sizing: border-box;
+text-decoration: none;
+outline: none;
+border: none;
+scroll-behavior: smooth;
+}
+:root{
+    --bg-color:  #1f242d;
+    --secound-bg-color: #323946;
+    --text-color: #ffff;
+    --main-color:#0ef;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background-color:#1f242d;
+    color:white;
+}
+.header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 2rem 9%;
+    z-index: 100;
+    background-color: #1f242d;
+}
+.logo{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffff;
+font-weight: 600;
+cursor: default;
+display: flex;
+font-size: 2.5rem;
+margin-right: 500px;
+}
+.navbar a{
+    color: #ffff;
+    margin-left: 50px;
+    font-size: 16px;
+    transition: 3s;
+
+}
+.navbar a:hover{
+    color: #0ef;
+}
+
+section{
+    max-height: 100vh;
+    padding: 10rem 9% 2rem;
+    color: #ffff;
+}
+.home{
+    display: flex;
+    color: #ffff;
+justify-content: center;
+align-items: center;
+gap: 30px;
+}
+.home-content{
+    margin-right: 200px;
+    font-size: 2rem;
+    justify-content: center;
+    align-self: center;
+    padding: 2rem;
+    margin-top: 150px;
+}
+.social-Media a{
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    border: .2rem solid #0ef;
+    background: transparent;
+    border-radius: 50%;
+    color: #0ef;
+border-color: #0ef;   
+ display: inline-flex;
+ width: 4rem;
+  height: 4rem;
+  margin-top: 10px;
+  transition: .5sec ease;
+cursor: pointer;
+}
+
+.social-Media a:hover{
+    color: #1f242d;
+    background-color: #0ef;
+    box-shadow:  0 0 1rem #0ef;
+}
+.btn{
+    
+    border-radius: 20px;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    color: darkblue;
+    margin-top: 20px;
+    height: 30px;
+    background: #0ef;
+    border-color: .2rem aliceblue;
+    cursor: pointer;
+    box-shadow: 0 0 1rem #0ef;
+   font-weight: 500;
+   letter-spacing: 1px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 16px;
+   transition: .5s ;
+}
+.home-content h1{
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 52px;
+    
+}
+span{
+    color: #0ef;
+}
+.home-content h3{
+    font-size: 26px;
+    font-weight: 700;
+}
+.home img{
+    width: 35vh;
+    animation: floatimg 4s ease-in-out infinite;
+}
+@keyframes floatimg{
+
+
+
+    0%{
+        transform: translateY(0);
+    }
+50%{
+        transform: translateY(-2rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 200px;
+}
+.abo{
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 300px;
+}
+.about h1{
+    font-size: 34px;
+    color: #0ef;
+}
+.about p{
+    line-height: 30px;
+    font-size: x-large;
+}
+.services span{
+    font-size: 5rem;
+color: #0ef;
+}
+.services h1{
+    font-size: 5rem;
+}
+.heading{
+    justify-content: space-between;
+    align-self: center;
+text-align: center;
+margin-top: 70px;
+margin-bottom: 20px;
+}
+.services-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.services-box{
+    flex: 1 1 30rem;
+box-shadow:  1 1 30rem #0ef;
+    background-color:#323946;
+    padding:  3rem 2rem 4rem;
+    border-radius: 2rem;
+    transition: .5sec ease;
+text-align: center;
+justify-content: center;
+align-items: center;
+height: 350px;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+.services-box:hover{
+    border-color:. 2rem solid lightblue;
+    transform: scale(1.02);
+    b
+}
+.services-box p{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.bx-code-alt{
+    font-size: 7rem;
+    color: cyan;
+}
+.services h3{
+    font-size: 3rem;
+}
+.services .btn{
+font-size: large;
+text-align: center;
+margin: 20px;
+padding: 2px;
+
+}
+.services .btn:hover{
+
+    background-color: #1f242d;
+    color: #0ef;
+    cursor: pointer;
+}
+.port{
+    text-align: center;
+font-size: 5rem;
+}
+
+.portfolio{
+ margin-top: 100px;
+    background-color: #323946;
+}
+.portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap:2.5rem;
+}
+.portfolio-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+ overflow: hidden;
+ display: flex;
+
+ 
+}
+.portfolio-box img{
+    width: 1000px;
+}
+.portfolio-layer{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+   
+}
+.portfolio-layer h4{
+    color: #0ef;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.portfolio-layer p{
+    color: aquamarine;
+    margin-left: 20px;
+}
+.portfolio-layer a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: red;
+}
+.portfolio-layer:hover{
+    background-color: #0ef;
+cursor: pointer;
+color: wheat;
+}
+.contact  h1{
+    margin-bottom: 2rem;
+    text-align: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+.contact form{
+    text-align: center;
+    max-width: 70rem;
+    margin: 1rem auto;
+    margin-bottom: 4rem;
+}
+.input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+     color: #ffff;
+     background:#323946;
+     border-radius: .8rem;
+     margin: .7rem 0;
+}
+.contact form .input-box input{
+    width: 49%;
+
+
+}
+.contact form textarea{
+    resize: none;
+}
+.contact form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: #323946;
+
+}
+.footer-text{
+    font-size: 16px;
+}
+.footer-top{
+    font-size: 26px;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    border-radius: 3rem;
+    
+}
+.footer-top i{
+    background-color: #0ef;
+    color: #323946;
+    border-radius: 3rem;
+
+}
