@@ -137,10 +137,23 @@ span{
 .home-content h3{
     font-size: 26px;
     font-weight: 700;
+    animation: iam 2s ease-in-out infinite;
+}
+@keyframes  iam{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-2rem);
+    }
+    100%{
+        transform: translateX(0);
+    }
+
 }
 .home img{
     width: 35vh;
-    animation: floatimg 4s ease-in-out infinite;
+    animation: floatimg 4s ease-in;
 }
 @keyframes floatimg{
 
